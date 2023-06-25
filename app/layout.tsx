@@ -33,6 +33,11 @@ export default function RootLayout({
         <meta name="config" content={JSON.stringify(getClientConfig())} />
         <link rel="manifest" href="/site.webmanifest"></link>
         <script src="/serviceWorkerRegister.js" defer></script>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-3QSWCTJJQX"
+        ></script>
+        <script src="/ga.js" defer></script>
       </head>
       <body>{children}</body>
     </html>
